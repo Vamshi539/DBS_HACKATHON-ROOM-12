@@ -61,8 +61,8 @@ if(isset($_POST['submit'])){
       ?>
       <input type="text" name="name" required placeholder="enter your name">
       <input type="email" name="email" required placeholder="enter your email">
-      <input type="password" name="password" required placeholder="enter your password">
-      <input type="password" name="cpassword" required placeholder="confirm your password">
+      <input type="password" name="password" required placeholder="enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+      <input type="password" name="cpassword" required placeholder="confirm your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
       <input type="submit" name="submit" value="register now" class="form-btn">
       <p>already have an account? <a href="login.html">login now</a></p>
    </form>
